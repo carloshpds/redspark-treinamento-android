@@ -60,7 +60,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="16dp"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/primary_button"
         android:text="@string/activity_login_button_enter"
         android:textColor="@android:color/white"
         app:layout_constraintLeft_toLeftOf="parent"

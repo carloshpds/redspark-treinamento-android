@@ -22,6 +22,8 @@ public class ForgotPassActivity extends AppCompatActivity {
 
     @OnClick(R.id.button)
     protected void sendEmail(View v) {
+        closeKeyboard();
+
         // TODO Apresentar mensagem de sucesso e voltar para a tela anterior
         Toast.makeText(this, "email enviado com sucesso", Toast.LENGTH_SHORT).show();
 
@@ -31,5 +33,13 @@ public class ForgotPassActivity extends AppCompatActivity {
                 finish();
             }
         }, 1500);
+    }
+
+    @OnClick(R.id.forgotContainer)
+    protected void closeKeyboard() {
+        View focus = getCurrentFocus();
+        if(focus != null) {
+            focus.clearFocus();
+        }
     }
 }
